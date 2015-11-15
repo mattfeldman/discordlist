@@ -1,0 +1,21 @@
+{
+  "name": "discordlist",
+  "description": "list of discord servers",
+  "authors": [
+    "Matt Feldman"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mattfeldman/discordlist",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.6"
+  }
+}
