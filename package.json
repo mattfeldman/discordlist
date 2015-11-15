@@ -1,0 +1,20 @@
+{
+  "name": "jekyll-livereload-gulp",
+  "version": "1.0.0",
+  "description": "Livereload with Gulp for Jekyll 2.x",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "author": "Dennis Kortsch",
+  "license": "MIT"
+}
