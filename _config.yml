@@ -3,3 +3,4 @@ collections:
   links:
     output: true
 exclude: [node_modules, gulpfile.js, package.json]
+permalink: none

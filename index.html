@@ -1,6 +1,5 @@
 ---
 ---
-<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
@@ -8,27 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <style>
+          .ui.header.segment.masthead{
+              background: #614385; /* fallback for old browsers */
+              background: -webkit-linear-gradient(to left, #614385 , #516395); /* Chrome 10-25, Safari 5.1-6 */
+              background: linear-gradient(to left, #614385 , #516395); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              padding: 2em 0;
+          }
+      </style>
   </head>
   <body>
-  <div class="ui container">
-      <h1  class="ui header">Discord List</h1>
-      <h1 class="ui sub header">A curated list of public discord chats.</h1>
-      <div class="ui cards">
-      {% for link in site.links %}
-        <a class="ui card" href={{link.link}}>
-            <div class="content">
-                <div class="header">{{link.title}}</div>
-                <div class="description">{{link.content}}</div>
-                <div class="meta">{{link.owner}}</div>
-            </div>
-            <span class="extra content">
-                {% for tag in link.tags %}
-                <span class="ui label">{{tag}}</span>
-                {% endfor %}
-            </span>
-        </a>
-      {% endfor %}
+  <div class="ui inverted masthead vertical header center aligned segment">
+      <div class="ui text container">
+          <h1  class="ui inverted header">Discord List</h1>
+          <h2 class="ui inverted sub header">A curated list of public discord chats.</h2>
       </div>
   </div>
+  <div class="ui container">
+      {% assign unique_tags = '' | split: ',' %}
+          <div class="ui tabular menu">
+              {% for level1 in site.data.nav.navigation %}
+                <div class="item {% if forloop.first %}active{% endif %}" data-tab={{level1.name}}>{{level1.name}}</div>
+              {% endfor %}
+          </div>
+          {% for level1 in site.data.nav.navigation %}
+            <div class="ui {% if forloop.first %}active{% endif %} tab" data-tab={{level1.name}}>
+                {% for level2 in level1.children %}
+                    <h4>{{level2}}</h4>
+                    <div class="ui cards">
+                        {% for link in site.links %}
+                            {% if link.tags contains {{level2}} %}
+                            <a class="ui violet card" href={{link.link}}>
+                                <div class="content">
+                                    <div class="header">{{link.title}}</div>
+                                    <div class="description">{{link.content}}</div>
+                                    <div class="meta">{{link.owner}}</div>
+                                </div>
+                            </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+          {% endfor %}
+  </div>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/semantic/dist/semantic.min.js"></script>
+  <script type="application/javascript">
+      $(document).ready(function(){
+          $('.tabular.menu .item').tab();
+      });
+  </script>
   </body>
 </html>

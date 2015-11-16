@@ -1,0 +1,92 @@
+navigation:
+  - name: FPS Games
+    children:
+    - ARMA
+    - Call of Duty
+    - Counter-Strike Global Offensive
+    - Insurgency
+    - Killing Floor 2
+    - Lawbreakers
+    - Left 4 Dead 2
+    - Reflex
+    - Team Fortress 2
+    - Tom Clancy's
+    - Unreal Tournament 4
+    - Warframe
+    - Warhammer
+  - name: Language
+    children:
+    - DUTCH
+    - ENGLISH
+    - FRENCH
+    - GERMAN
+    - HAWAII
+    - INDIA
+    - OCEANA
+    - PORTUGUESE
+    - SWEDISH
+  - name: MMO
+    children:
+    - Albion Online
+    - ArcheAge
+    - Closers Dimension Conflict
+    - Crowfall MMO
+    - Devilion MMO
+    - Diablo
+    - Dofus
+    - Dragon Nest
+    - Dungeons and Dragons Online
+    - Elite Dangerous
+    - FFXIV
+    - Grand Theft Auto
+    - Guild Wars 2
+    - Maplestory 2
+    - Marvel Heroes
+    - Path of Exile
+    - Phantasy Star Online2
+    - Phantasy Star Universe
+    - Rising Thunder
+    - Secrets of Grindea
+    - Tree Of Savior
+    - Wakfu
+    - Wildstar
+  - name: Moba Games
+    children:
+    - Heroes of the Storm
+    - League of Legends
+    - Overwatch
+    - Smite
+  - name: Social
+    children:
+    - Anime, Manga, Books and Comic Books
+    - Computers, Consoles and Company
+    - Gaming Communities
+    - Matchmaking
+    - Movies
+    - Music and Production
+    - Podcasts
+    - Social
+    - Unofficial Discord API
+  - name: Other Games
+    children:
+    - Binding of Isaac
+    - Blade and Soul
+    - Chivalry
+    - Distance
+    - Duelyst
+    - Evolve
+    - Hearthstone
+    - Lost Saga
+    - Mario Kart
+    - Minecraft
+    - Osu!
+    - Pokemon
+    - Project Zomboid
+    - Rocket League
+    - Smash Bros
+    - Starcraft
+    - Sword of Vermilion
+    - TCG
+    - Terraria
+    - The Sims
+    - Touhou
