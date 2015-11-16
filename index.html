@@ -24,32 +24,31 @@
       </div>
   </div>
   <div class="ui container">
-      {% assign unique_tags = '' | split: ',' %}
-          <div class="ui tabular menu">
-              {% for level1 in site.data.nav.navigation %}
-                <div class="item {% if forloop.first %}active{% endif %}" data-tab={{level1.name}}>{{level1.name}}</div>
-              {% endfor %}
-          </div>
+      <div class="ui tabular menu">
           {% for level1 in site.data.nav.navigation %}
-            <div class="ui {% if forloop.first %}active{% endif %} tab" data-tab={{level1.name}}>
-                {% for level2 in level1.children %}
-                    <h4>{{level2}}</h4>
-                    <div class="ui cards">
-                        {% for link in site.links %}
-                            {% if link.tags contains {{level2}} %}
-                            <a class="ui violet card" href={{link.link}}>
-                                <div class="content">
-                                    <div class="header">{{link.title}}</div>
-                                    <div class="description">{{link.content}}</div>
-                                    <div class="meta">{{link.owner}}</div>
-                                </div>
-                            </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                {% endfor %}
-            </div>
+            <div class="item {% if forloop.first %}active{% endif %}" data-tab={{level1.name}}>{{level1.name}}</div>
           {% endfor %}
+      </div>
+      {% for level1 in site.data.nav.navigation %}
+        <div class="ui {% if forloop.first %}active{% endif %} tab" data-tab={{level1.name}}>
+            {% for level2 in level1.children %}
+                <h4>{{level2}}</h4>
+                <div class="ui cards">
+                    {% for link in site.links %}
+                        {% if link.tags contains {{level2}} %}
+                        <a class="ui violet card" href={{link.link}}>
+                            <div class="content">
+                                <div class="header">{{link.title}}</div>
+                                <div class="description">{{link.content}}</div>
+                                <div class="meta">{{link.owner}}</div>
+                            </div>
+                        </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+      {% endfor %}
   </div>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/semantic/dist/semantic.min.js"></script>
