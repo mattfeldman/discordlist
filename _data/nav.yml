@@ -52,6 +52,7 @@ navigation:
     - Wildstar
   - name: Moba Games
     children:
+    - Dota 2
     - Heroes of the Storm
     - League of Legends
     - Overwatch
