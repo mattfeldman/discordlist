@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -8,10 +10,25 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-  <div class="ui text container">
+  <div class="ui container">
       <h1  class="ui header">Discord List</h1>
       <h1 class="ui sub header">A curated list of public discord chats.</h1>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur at earum, eveniet hic in ipsa iure labore laboriosam maiores molestiae, molestias necessitatibus omnis porro quibusdam sed unde vel vitae!
+      <div class="ui cards">
+      {% for link in site.links %}
+        <a class="ui card" href={{link.link}}>
+            <div class="content">
+                <div class="header">{{link.title}}</div>
+                <div class="description">{{link.content}}</div>
+                <div class="meta">{{link.owner}}</div>
+            </div>
+            <span class="extra content">
+                {% for tag in link.tags %}
+                <span class="ui label">{{tag}}</span>
+                {% endfor %}
+            </span>
+        </a>
+      {% endfor %}
+      </div>
   </div>
   </body>
 </html>
