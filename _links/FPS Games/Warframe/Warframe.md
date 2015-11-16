@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "Visions of Decay"
+title: "Warframe"
 link: https://discord.gg/0Qj6myIvIZgVf5zr
 owner: "Rednuker"
 tags: [FPS Games,Warframe]
