@@ -1,8 +1,7 @@
 {
-  "name": "jekyll-livereload-gulp",
+  "name": "discordlist",
   "version": "1.0.0",
-  "description": "Livereload with Gulp for Jekyll 2.x",
-  "main": "gulpfile.js",
+  "description": "A collection of curated discord servers",
   "devDependencies": {
     "bower": "^1.6.5",
     "gulp": "^3.9.0",
@@ -14,8 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "http://github.com/mattfeldman/discordlist"
   },
-  "author": "Dennis Kortsch",
+  "author": "Matt Feldman",
   "license": "MIT"
 }
