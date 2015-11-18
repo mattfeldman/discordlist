@@ -29,6 +29,7 @@
           {% for level1 in site.data.nav.navigation %}
             <div class="item {% if forloop.first %}active{% endif %}" data-tab={{level1.name}}>{{level1.name}}</div>
           {% endfor %}
+          <a href="mailto:discordlist@gmail.com?Subject=discordlist%20feedback"><div class="violet active item">Send Feedback</div></a>
       </div>
       {% for level1 in site.data.nav.navigation %}
         <div class="ui {% if forloop.first %}active{% endif %} tab" data-tab={{level1.name}}>
