@@ -62,6 +62,7 @@ navigation:
     children:
     - Anime, Manga, Books and Comic Books
     - Computers, Consoles and Company
+    - Game Development
     - Gaming Communities
     - Matchmaking
     - Movies
