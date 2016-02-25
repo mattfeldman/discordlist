@@ -38,3 +38,6 @@ node_modules
 
 # Built Files (using github pages build)
 _site/
+
+# OS X Files
+.DS_Store
