@@ -60,8 +60,8 @@ navigation:
     - Smite
   - name: Social
     children:
-    - Art and Culture
     - Anime, Manga, Books and Comic Books
+    - Art and Culture
     - Computers, Consoles and Company
     - Gaming Communities
     - Matchmaking
