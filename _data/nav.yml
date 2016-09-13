@@ -11,7 +11,6 @@ navigation:
     - Warhammer
   - name: Language
     children:
-    - DUTCH
     - ENGLISH
     - FRENCH
     - GERMAN
@@ -20,7 +19,6 @@ navigation:
     - SWEDISH
   - name: MMO
     children:
-    - Albion Online
     - ArcheAge
     - Closers Dimension Conflict
     - Crowfall MMO
