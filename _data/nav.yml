@@ -59,8 +59,6 @@ navigation:
     - Unofficial Discord API
   - name: Other Games
     children:
-    - Binding of Isaac
-    - Blade and Soul
     - Chivalry
     - Distance
     - Duelyst
