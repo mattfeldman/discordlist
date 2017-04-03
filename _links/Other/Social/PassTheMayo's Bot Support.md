@@ -1,7 +1,7 @@
 ---
 layout: link
-title: "PassTheMayo's Bot Support"
-link: https://discord.gg/TTzJQgH
-owner: "PassTheMayo"
+title: "PassTheMayo Official"
+link: https://discord.gg/cXZ6Mhm
+owner: "PassTheMayo#1281"
 tags: [Other,Social]
 ---
