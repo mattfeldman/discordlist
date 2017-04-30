@@ -12,6 +12,7 @@ navigation:
   - name: Language
     children:
     - ENGLISH
+    - ESTONIA
     - FRENCH
     - GERMAN
     - INDIA
