@@ -17,6 +17,7 @@ navigation:
     - GERMAN
     - INDIA
     - PORTUGUESE
+    - SPANISH
     - SWEDISH
   - name: MMO
     children:
