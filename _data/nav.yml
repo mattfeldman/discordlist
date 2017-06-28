@@ -54,8 +54,8 @@ navigation:
     - Gaming Communities
     - Movies
     - Music and Production
-    - Podcasts
     - Social
+    - Bot servers
     - Unofficial Discord API
   - name: Other Games
     children:
