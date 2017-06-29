@@ -45,17 +45,16 @@ navigation:
     - League of Legends
     - Overwatch
     - Smite
-  - name: Social
+  - name: Other
     children:
-    - Art and Culture
     - Anime, Manga, Books and Comic Books
+    - Bot servers
     - Computers, Consoles and Company
     - Coding
     - Gaming Communities
     - Movies
     - Music and Production
     - Social
-    - Bot servers
     - Unofficial Discord API
   - name: Other Games
     children:
